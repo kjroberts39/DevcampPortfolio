@@ -69,5 +69,5 @@ gem 'carrierwave-aws', '~> 1.1'
 gem 'dotenv-rails', '~> 2.2'
 
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
-
-
+gem 'tether-rails'
+gem 'gritter', '~> 1.2'
