@@ -6,5 +6,7 @@
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>
+
+    <%= link_to 'Add New Portfolio Item', new_portfolio_path, class: 'btn btn-primary' if logged_in?(:site_admin) %>
   </div>
 </div>
