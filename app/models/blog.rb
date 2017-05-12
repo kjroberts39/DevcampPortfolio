@@ -12,4 +12,9 @@ class Blog < ApplicationRecord
 	def self.recent
 		order("created_at DESC")
 	end
+
+	def should_generate_new_friendly_id?
+	  title_changed?
+	end
+	
 end
